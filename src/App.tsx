@@ -3,7 +3,7 @@ import './App.css'
 import styled, { ThemeContext, ThemeProvider } from 'styled-components';
 import { GlobalStyles, darkTheme, lightTheme } from './utils/theme/themeConfig';
 import { loadTheme, toggleTheme } from './utils/theme/themeUtils';
-import ThemeButton from './components/theme/ThemeButton';
+import LandingPageComponent from './pages/LandingPageComponent';
 
 function App() {
   const [theme, setTheme] = useState(loadTheme);
@@ -18,10 +18,7 @@ function App() {
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <Wrapper>
           <GlobalStyles />
-          <ThemeButton theme={theme} handleToggleTheme={handleToggleTheme} />
-          <div>
-            <h1>In1t Portfolio</h1>
-          </div>
+          <LandingPageComponent />
         </Wrapper>
       </ThemeProvider>
     </ThemeContext.Provider>
