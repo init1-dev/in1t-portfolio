@@ -68,7 +68,7 @@ const NavBar = styled.nav`
         font-weight: 500;
         margin: auto 0;
         color: ${({ theme }) => theme.text};
-        transition: transform 0.2s ease;
+        transition: transform 0.2s ease, color 0.2s ease;
         text-rendering: optimizeLegibility;
 
         &:hover {
