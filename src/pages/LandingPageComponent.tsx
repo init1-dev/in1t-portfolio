@@ -62,6 +62,7 @@ const AboutSubtext = styled.h2`
 `;
 
 const AboutSmall = styled.small`
+    text-align: center;
     margin-top: 7rem;
 `;
 
