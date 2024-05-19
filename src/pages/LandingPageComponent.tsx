@@ -6,7 +6,8 @@ const LandingPageComponent = () => {
     return (
         <>
             <TopBarComponent />
-            <h1>In1t Portfolio</h1>
+            <h1>In1t's Portfolio</h1>
+            <small>In development</small>
             <FooterComponent />
         </>
     );
