@@ -7,9 +7,9 @@ const TopBarComponent = () => {
     const [ activeLink, setActiveLink ] = useState('About');
 
     const links = [
-        { href: '#about', text: 'About' },
         { href: '#stack', text: 'Stack' },
         { href: '#projects', text: 'Projects' },
+        { href: '#about', text: 'About' },
         { href: '#contact', text: 'Contact' },
     ]
 
@@ -41,6 +41,7 @@ const HeaderContainer = styled.div`
     top: 1rem;
     width: 100%;
     user-select: none;
+    z-index: 1;
 `;
 
 const Header = styled.div`
@@ -52,14 +53,14 @@ const Header = styled.div`
 `;
 
 const NavBar = styled.nav`
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
     display: flex;
     gap: 1.5rem;
+    background-color: ${({ theme }) => theme.headerBg};
+    filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
 
-    @media (min-width: 700px) {
-        
-    }
-
-    @media (min-width: 900px) {
+    @media (min-width: 1000px) {
         
     }
 

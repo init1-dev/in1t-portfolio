@@ -1,0 +1,3 @@
+export const stackList = [
+    "HTML5", "SCSS", "CSS3", "JAVASCRIPT", "TYPESCRIPT", "REACT", "REACT ROUTER", "REDUX", "JEST", "CYPRESS", "NODEJS", "EXPRESS", "MONGODB", "MYSQL", "PHP", "LARAVEL"
+]

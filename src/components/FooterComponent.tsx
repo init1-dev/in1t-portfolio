@@ -1,65 +1,98 @@
-import styled, { useTheme } from "styled-components";
+import styled from "styled-components";
+import { FiGithub } from "react-icons/fi";
+import { GrLinkedin } from "react-icons/gr";
 
 const FooterComponent = () => {
-    const { theme, handleToggleTheme } = useTheme();
-    console.log(theme, handleToggleTheme);
-    
-
     return (
         <FooterContainer>
             <Footer>
-                <span>
-                    © 2024 In1t - Made with 🤍
-                </span>
+                <CopyRight>
+                    © 2024 In1t - All rights reserved
+                </CopyRight>
                 
                 <FooterNav>
-                    <a>About</a>
-                    <a>Contact</a>
-                </FooterNav>
+                    <FooterLink
+                        href="https://github.com/init1-dev"
+                        target="_black"
+                        rel="noopener noreferrer"
+                    >
+                        <FiGithub />
+                        GitHub
+                    </FooterLink>
 
+                    <FooterLink
+                        href="https://www.linkedin.com/in/in1t-jorge-guillen/" 
+                        target="_black" 
+                        rel="noopener noreferrer"
+                    >
+                        <GrLinkedin />
+                        LinkedIn
+                    </FooterLink>
+                </FooterNav>
             </Footer>
         </FooterContainer>
     );
 }
 
 const FooterContainer = styled.div`
-    position: fixed;
-    bottom: 1rem;
-    width: 100%;
+    background-color: ${({ theme }) => theme.bg};
+    padding: 1rem 0;
+    width: 90%;
+    margin: 0 auto;
     user-select: none;
+
+    @media (min-width: 1000px){
+        width: 100%;
+    }
+`;
+
+const CopyRight = styled.span`
+    
 `;
 
 const Footer = styled.div`
     display: flex;
-    justify-content: space-evenly;
-    padding: 0 10% 0 10%;
-    margin-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
     gap: 2rem;
     font-size: 14px;
     font-weight: 500;
     color: ${({ theme }) => theme.footerText};
+
+    @media (min-width: 1000px){
+        padding: 0 20% 0 20%;
+    }
+
+    @media (min-width: 1450px){
+        padding: 0 30% 0 30%;
+    }
 `;
 
 const FooterNav = styled.nav`
     display: flex;
+    flex-direction: row;
     gap: 1.5rem;
+`;
 
-    a {
-        font-size: 15px;
-        font-weight: 500;
-        margin: auto 0;
-        color: ${({ theme }) => theme.footerText};
-        transition: transform 0.2s ease;
-        text-rendering: optimizeLegibility;
+const FooterLink = styled.a`
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 15px;
+    font-weight: 500;
+    margin: auto 0;
+    color: ${({ theme }) => theme.footerText};
+    transition: transform 0.2s ease;
+    text-rendering: optimizeLegibility;
 
-        &:hover {
-            color: ${({ theme }) => theme.menuActive};
-            transform: scale(1.12);
-        }
+    &:hover {
+        color: ${({ theme }) => theme.menuActive};
+        transform: scale(1.12);
+    }
 
-        &[aria-selected="true"] {
-            color: ${({ theme }) => theme.menuActive};
-        }
+    &[aria-selected="true"] {
+        color: ${({ theme }) => theme.menuActive};
     }
 `;
 

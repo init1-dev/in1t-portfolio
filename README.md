@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+## Table of Contents
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [Overview](#overview)
+    - [Built With](#built-with)
+- [Features](#features)
+- [Next Updates](#Next-updates)
+- [Contact](#contact)
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is my portfolio, made with react and typescript.
 
-## Expanding the ESLint configuration
+### Built With
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [React](https://es.react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-- Configure the top-level `parserOptions` property like this:
+### Additional packages:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- [react-icons](https://www.npmjs.com/package/react-icons)
+
+## Features
+
+### Usage instructions (dev):
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/init1-dev/in1t-portfolio.git
+# install dependencies
+$ npm install
+# run project
+$npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Next Updates
+- About
+- Stack
+- Language functionality (en/es)
+
+### TODO:
+- Add projects img
+- improve projects styles
+- Fix styles to be fully responsive
+- Contact
+
+## Contact
+
+- LinkedIn [Profile](https://www.linkedin.com/in/in1t-jorge-guillen/)
+- GitHub [@init1-dev](https://github.com/init1-dev)
