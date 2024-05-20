@@ -40,7 +40,8 @@ $npm run dev
 - Language functionality (en/es)
 
 ### TODO:
-- FIX project card image min-width
+- Add cv button in about
+- Add about img
 - Add projects img
 - improve projects styles
 - Fix styles to be fully responsive

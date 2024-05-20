@@ -21,7 +21,7 @@ export const projectsList: ProjectInterface[] = [
         description: "Shop landing page developed using Html, Scss and JavaScript",
         links: {
             code: "https://github.com/init1-dev/oxygen-shop",
-            demo: "init1-dev.github.io/oxygen-shop/"
+            demo: "https://init1-dev.github.io/oxygen-shop/"
         }
     },
     {
