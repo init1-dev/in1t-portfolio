@@ -15,9 +15,7 @@ const ProjectCard = ({
 
     return (
         <CardContainer>
-            <ImageContainer>
-                <img src={img} alt="project image" />
-            </ImageContainer>
+            <img src={img} alt="project image" />
 
             <CardInfoContainer>
                 <CardContainerHeader>
@@ -53,39 +51,25 @@ const ProjectCard = ({
 const CardContainer = styled.div`
     display: grid;
     grid-template-columns: 100%;
-    overflow: hidden;
     
     filter: drop-shadow(1px 1px 2px rgb(0 0 0 / 0.6));
 
     @media (min-width: 1000px){
         grid-template-columns: 40% 60%;
-        /* gap: 0.5rem; */
     }
 
-    
-`;
-
-const ImageContainer = styled.div`
-    overflow: hidden;
-    border-radius: 0.5rem 0rem 0 0.5rem;
-
     img {
-        transition: transform 0.4s ease, transform-origin 0.4s ease;
         width: 100%;
         height: 100%;
         aspect-ratio: 7/5;
         object-fit: cover;
         object-position: center;
+        border-radius: 0.5rem 0.5rem 0 0;
         filter: drop-shadow(1px 0px 0px rgb(0 0 0 / 0.2));
         
         @media (min-width: 1000px){
             border-radius: 0.5rem 0 0 0.5rem;
         }
-    }
-
-    &:hover img {
-        transform-origin: top left;
-        transform: scale(1.05);
     }
 `;
 
