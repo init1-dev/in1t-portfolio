@@ -14,7 +14,7 @@ const LandingPageComponent = () => {
 
 
             <LandingContent>
-                <AboutTitle>Hey i'm In1t</AboutTitle>
+                <AboutTitle>Hey, i'm In1t</AboutTitle>
                 <AboutSubtext>Welcome to my portfolio</AboutSubtext>
 
                 <AboutSmall>( In development )</AboutSmall>
