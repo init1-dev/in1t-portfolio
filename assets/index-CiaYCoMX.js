@@ -253,42 +253,30 @@ Error generating stack: `+l.message+`
     &[aria-selected="true"] {
         color: ${({theme:e})=>e.menuActive};
     }
-`;function Oh(e){return Dt({tag:"svg",attr:{viewBox:"0 0 640 512"},child:[{tag:"path",attr:{d:"M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"},child:[]}]})(e)}const Rh=[{name:"Oxygen Shop",subtitle:"oxygen-shop",technologies:["html","scss","js"],description:"Shop landing page developed using Html, Scss and JavaScript",links:{img:"https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/oxygenshop.png",code:"https://github.com/init1-dev/oxygen-shop",demo:"https://init1-dev.github.io/oxygen-shop/"}},{name:"React Image Search",subtitle:"react-image-search-app",technologies:["react","router","redux","typescript"],description:"Responsive image search app made using React, TypeScript and Redux with styled-components",links:{img:"https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/image-search.png",code:"https://github.com/init1-dev/react-image-search-app",demo:"http://react-image-search-app.s3-website.eu-west-3.amazonaws.com/"}},{name:"Miranda Web",subtitle:"hotel-miranda-web",technologies:["html","scss","js"],description:"Miranda Hotel web using HTML/CSS",links:{img:"https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-hotel.png",code:"https://github.com/init1-dev/hotel-miranda-web",demo:"http://hotel-miranda-web.s3-website.eu-west-3.amazonaws.com/"}},{name:"Miranda Dashboard",subtitle:"hotel-miranda-dashboard",technologies:["react","router","redux","typescript"],description:"Hotel dashboard app made using React with styled-components (only desktop, no responsive)",links:{img:"https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-dashboard.png",code:"https://github.com/init1-dev/hotel-miranda-dashboard",demo:"http://hotel-miranda-dashboard-init.s3-website.eu-west-3.amazonaws.com/login"}}],Ih=({project:e})=>{const{name:t,subtitle:n,technologies:r,description:o,links:l}=e,{img:i,code:u,demo:s}=l;return E.jsxs(Mh,{children:[E.jsx(Dh,{children:E.jsx("img",{src:i,alt:"project image"})}),E.jsxs(Ah,{children:[E.jsxs(Fh,{children:[E.jsxs("h4",{children:[t+" ",E.jsxs("small",{children:["(",n,")"]})]}),E.jsx(Bh,{children:r.map((a,m)=>E.jsx(Uh,{children:a},m))})]}),E.jsx("p",{children:o}),E.jsxs(Hh,{children:[E.jsxs(Na,{href:u,target:"_black",rel:"noopener noreferrer",children:[E.jsx(gd,{}),"Code"]}),E.jsxs(Na,{href:s,target:"_black",rel:"noopener noreferrer",children:[E.jsx(lh,{}),"Preview"]})]})]})]})},Mh=j.div`
+`;function Oh(e){return Dt({tag:"svg",attr:{viewBox:"0 0 640 512"},child:[{tag:"path",attr:{d:"M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"},child:[]}]})(e)}const Rh=[{name:"Oxygen Shop",subtitle:"oxygen-shop",technologies:["html","scss","js"],description:"Shop landing page developed using Html, Scss and JavaScript",links:{img:"https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/oxygenshop.png",code:"https://github.com/init1-dev/oxygen-shop",demo:"https://init1-dev.github.io/oxygen-shop/"}},{name:"React Image Search",subtitle:"react-image-search-app",technologies:["react","router","redux","typescript"],description:"Responsive image search app made using React, TypeScript and Redux with styled-components",links:{img:"https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/image-search.png",code:"https://github.com/init1-dev/react-image-search-app",demo:"http://react-image-search-app.s3-website.eu-west-3.amazonaws.com/"}},{name:"Miranda Web",subtitle:"hotel-miranda-web",technologies:["html","scss","js"],description:"Miranda Hotel web using HTML/CSS",links:{img:"https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-hotel.png",code:"https://github.com/init1-dev/hotel-miranda-web",demo:"http://hotel-miranda-web.s3-website.eu-west-3.amazonaws.com/"}},{name:"Miranda Dashboard",subtitle:"hotel-miranda-dashboard",technologies:["react","router","redux","typescript"],description:"Hotel dashboard app made using React with styled-components (only desktop, no responsive)",links:{img:"https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-dashboard.png",code:"https://github.com/init1-dev/hotel-miranda-dashboard",demo:"http://hotel-miranda-dashboard-init.s3-website.eu-west-3.amazonaws.com/login"}}],Ih=({project:e})=>{const{name:t,subtitle:n,technologies:r,description:o,links:l}=e,{img:i,code:u,demo:s}=l;return E.jsxs(Mh,{children:[E.jsx("img",{src:i,alt:"project image"}),E.jsxs(Dh,{children:[E.jsxs(Ah,{children:[E.jsxs("h4",{children:[t+" ",E.jsxs("small",{children:["(",n,")"]})]}),E.jsx(Fh,{children:r.map((a,m)=>E.jsx(Bh,{children:a},m))})]}),E.jsx("p",{children:o}),E.jsxs(Uh,{children:[E.jsxs(Na,{href:u,target:"_black",rel:"noopener noreferrer",children:[E.jsx(gd,{}),"Code"]}),E.jsxs(Na,{href:s,target:"_black",rel:"noopener noreferrer",children:[E.jsx(lh,{}),"Preview"]})]})]})]})},Mh=j.div`
     display: grid;
     grid-template-columns: 100%;
-    overflow: hidden;
     
     filter: drop-shadow(1px 1px 2px rgb(0 0 0 / 0.6));
 
     @media (min-width: 1000px){
         grid-template-columns: 40% 60%;
-        /* gap: 0.5rem; */
     }
 
-    
-`,Dh=j.div`
-    overflow: hidden;
-    border-radius: 0.5rem 0rem 0 0.5rem;
-
     img {
-        transition: transform 0.4s ease, transform-origin 0.4s ease;
         width: 100%;
         height: 100%;
         aspect-ratio: 7/5;
         object-fit: cover;
         object-position: center;
+        border-radius: 0.5rem 0.5rem 0 0;
         filter: drop-shadow(1px 0px 0px rgb(0 0 0 / 0.2));
         
         @media (min-width: 1000px){
             border-radius: 0.5rem 0 0 0.5rem;
         }
     }
-
-    &:hover img {
-        transform-origin: top left;
-        transform: scale(1.05);
-    }
-`,Ah=j.div`
+`,Dh=j.div`
     padding: 1rem;
     color: ${({theme:e})=>e.cardText};
     background-color: ${({theme:e})=>e.cardBg};
@@ -307,7 +295,7 @@ Error generating stack: `+l.message+`
         font-size: 15px;
         text-align: left;
     }
-`,Fh=j.div`
+`,Ah=j.div`
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
@@ -322,17 +310,17 @@ Error generating stack: `+l.message+`
             color: ${({theme:e})=>e.footerText};
         }
     }
-`,Bh=j.div`
+`,Fh=j.div`
     display: flex;
     gap: 0.5rem;
-`,Uh=j.span`
+`,Bh=j.span`
     padding: 0.2rem 0.8rem;
     font-size: 0.8rem;
     border-radius: 0.5rem;
     color: ${({theme:e})=>e.spanText};
     background-color: ${({theme:e})=>e.spanBg};
     filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
-`,Hh=j.div`
+`,Uh=j.div`
     display: flex;
     gap: 0.5rem;
 `,Na=j.a`
@@ -349,40 +337,40 @@ Error generating stack: `+l.message+`
     &:hover {
         color: ${({theme:e})=>e.menuActive};
     }
-`,Vh=()=>{const e=Rh;return E.jsxs(Wh,{id:"projects",children:[E.jsxs(Qh,{children:[E.jsx(Gh,{}),"Projects"]}),E.jsx(Yh,{children:e.map((t,n)=>E.jsx(Ih,{project:t},n))})]})},Wh=j.section`
+`,Hh=()=>{const e=Rh;return E.jsxs(Vh,{id:"projects",children:[E.jsxs(Wh,{children:[E.jsx(Qh,{}),"Projects"]}),E.jsx(Gh,{children:e.map((t,n)=>E.jsx(Ih,{project:t},n))})]})},Vh=j.section`
     padding-top: 5rem;
     
     @media (min-width: 1000px){
         padding-top: 7rem;
     }
-`,Qh=j.h2`
+`,Wh=j.h2`
     display: flex;
     align-items: center;
     column-gap: 0.75rem;
     margin-bottom: 2rem;
-`,Gh=j(Oh)`
+`,Qh=j(Oh)`
     width: 1.75rem;
     height: 1.75rem;
-`,Yh=j.div`
+`,Gh=j.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
     /* grid-template-columns: ; */
-`;function Kh(e){return Dt({tag:"svg",attr:{viewBox:"0 0 640 512"},child:[{tag:"path",attr:{d:"M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"},child:[]}]})(e)}const La=["HTML5","SCSS","CSS3","JAVASCRIPT","TYPESCRIPT","REACT","REACT ROUTER","REDUX","JEST","CYPRESS","NODEJS","EXPRESS","MONGODB","MYSQL","PHP","LARAVEL"],Xh=()=>{const e=La;return E.jsxs(Zh,{id:"stack",children:[E.jsxs(Jh,{children:[E.jsx(qh,{}),"Stack"]}),E.jsx("div",{children:e.map((t,n)=>n===La.length-1?E.jsx("span",{children:t},n):E.jsx("span",{children:t+", "},n))})]})},Zh=j.section`
+`;function Yh(e){return Dt({tag:"svg",attr:{viewBox:"0 0 640 512"},child:[{tag:"path",attr:{d:"M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"},child:[]}]})(e)}const La=["HTML5","SCSS","CSS3","JAVASCRIPT","TYPESCRIPT","REACT","REACT ROUTER","REDUX","JEST","CYPRESS","NODEJS","EXPRESS","MONGODB","MYSQL","PHP","LARAVEL"],Kh=()=>{const e=La;return E.jsxs(Xh,{id:"stack",children:[E.jsxs(Zh,{children:[E.jsx(Jh,{}),"Stack"]}),E.jsx("div",{children:e.map((t,n)=>n===La.length-1?E.jsx("span",{children:t},n):E.jsx("span",{children:t+", "},n))})]})},Xh=j.section`
     padding-top: 5rem;
     
     @media (min-width: 1000px){
         padding-top: 7rem;
     }
-`,Jh=j.h2`
+`,Zh=j.h2`
     display: flex;
     align-items: center;
     column-gap: 0.75rem;
     margin-bottom: 2rem;
-`,qh=j(Kh)`
+`,Jh=j(Yh)`
     width: 1.75rem;
     height: 1.75rem;
-`,bh=()=>E.jsxs(E.Fragment,{children:[E.jsx(gh,{}),E.jsxs(em,{children:[E.jsx(tm,{children:"Hey, i'm In1t"}),E.jsx(nm,{children:"Welcome to my portfolio"}),E.jsx(rm,{children:"( In development )"}),E.jsx(Xh,{}),E.jsx(Vh,{}),E.jsx(kh,{}),E.jsx(Lh,{})]}),E.jsx(sh,{})]}),em=j.div`
+`,qh=()=>E.jsxs(E.Fragment,{children:[E.jsx(gh,{}),E.jsxs(bh,{children:[E.jsx(em,{children:"Hey, i'm In1t"}),E.jsx(tm,{children:"Welcome to my portfolio"}),E.jsx(nm,{children:"( In development )"}),E.jsx(Kh,{}),E.jsx(Hh,{}),E.jsx(kh,{}),E.jsx(Lh,{})]}),E.jsx(sh,{})]}),bh=j.div`
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -395,7 +383,7 @@ Error generating stack: `+l.message+`
     @media (min-width: 1450px){
         width: 50%;
     }
-`,tm=j.h1`
+`,em=j.h1`
     font-size: 62px;
     margin-top: 8rem;
     text-align: left;
@@ -403,14 +391,14 @@ Error generating stack: `+l.message+`
     @media (min-width: 1000px){
         margin-top: 10rem;
     }
-`,nm=j.h2`
+`,tm=j.h2`
     margin-top: 1rem;
     font-size: 24px;
     text-align: left;
     filter: invert(50%);
-`,rm=j.small`
+`,nm=j.small`
     margin-top: 1rem;
-`;function om(){const[e,t]=ct.useState(J0),n=()=>{const r=Z0(e);t(r)};return E.jsx(on.Provider,{value:{theme:e,handleToggleTheme:n},children:E.jsx(V0,{theme:e==="light"?Y0:K0,children:E.jsxs(lm,{children:[E.jsx(X0,{}),E.jsx(bh,{})]})})})}const lm=j.div`
+`;function rm(){const[e,t]=ct.useState(J0),n=()=>{const r=Z0(e);t(r)};return E.jsx(on.Provider,{value:{theme:e,handleToggleTheme:n},children:E.jsx(V0,{theme:e==="light"?Y0:K0,children:E.jsxs(om,{children:[E.jsx(X0,{}),E.jsx(qh,{})]})})})}const om=j.div`
   background-color: ${({theme:e})=>e.body};
   color: ${({theme:e})=>e.text};
-`;ti.createRoot(document.getElementById("root")).render(E.jsx(ee.StrictMode,{children:E.jsx(om,{})}));
+`;ti.createRoot(document.getElementById("root")).render(E.jsx(ee.StrictMode,{children:E.jsx(rm,{})}));
