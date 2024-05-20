@@ -27,7 +27,11 @@ const AboutMe = () => {
 }
 
 const AboutSection = styled.section`
-    padding-top: 7rem;
+    padding-top: 5rem;
+    
+    @media (min-width: 1000px){
+        padding-top: 7rem;
+    }
 `;
 
 const SectionTitle = styled.h2`

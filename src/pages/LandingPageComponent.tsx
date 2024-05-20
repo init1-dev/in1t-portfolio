@@ -50,8 +50,12 @@ const LandingContent = styled.div`
 
 const AboutTitle = styled.h1`
     font-size: 62px;
-    margin-top: 10rem;
+    margin-top: 8rem;
     text-align: left;
+
+    @media (min-width: 1000px){
+        margin-top: 10rem;
+    }
 `;
 
 const AboutSubtext = styled.h2`
@@ -62,8 +66,7 @@ const AboutSubtext = styled.h2`
 `;
 
 const AboutSmall = styled.small`
-    text-align: center;
-    margin-top: 7rem;
+    margin-top: 1rem;
 `;
 
 export default LandingPageComponent;

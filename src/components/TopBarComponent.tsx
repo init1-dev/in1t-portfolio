@@ -38,30 +38,41 @@ const TopBarComponent = () => {
 
 const HeaderContainer = styled.div`
     position: fixed;
-    top: 1rem;
+    top: unset;
     width: 100%;
     user-select: none;
     z-index: 1;
+
+    @media (min-width: 1000px) {
+        top: 1rem;
+    }
 `;
 
 const Header = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10% 0 10%;
+    padding: 0;
     margin-bottom: 1rem;
+
+    @media (min-width: 1000px) {
+        padding: 0 10% 0 10%;
+    }
 `;
 
 const NavBar = styled.nav`
+    width: 100%;
     padding: 0.5rem 2rem;
-    border-radius: 0.5rem;
+    border-radius: unset;
     display: flex;
+    justify-content: center;
     gap: 1.5rem;
     background-color: ${({ theme }) => theme.headerBg};
     filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
 
     @media (min-width: 1000px) {
-        
+        width: unset;
+        border-radius: 0.5rem;
     }
 
     a {

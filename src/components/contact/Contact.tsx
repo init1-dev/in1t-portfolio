@@ -40,10 +40,11 @@ const Contact = () => {
 }
 
 const ContactSection = styled.section`
-    padding-top: 7rem;
+    padding-top: 5rem;
     padding-bottom: 3rem;
-
+    
     @media (min-width: 1000px) {
+        padding-top: 7rem;
         padding-bottom: 5rem;
     }
 `;

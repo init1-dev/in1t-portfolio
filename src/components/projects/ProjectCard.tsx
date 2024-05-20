@@ -39,7 +39,7 @@ const ProjectCard = ({
                         Code
                     </StyledLink>
                     
-                    <StyledLink href={demo}>
+                    <StyledLink href={demo} target="_black" rel="noopener noreferrer">
                         <FiLink />
                         Preview
                     </StyledLink>
@@ -53,11 +53,11 @@ const CardContainer = styled.div`
     display: grid;
     grid-template-columns: 100%;
     
-    filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
+    filter: drop-shadow(1px 1px 2px rgb(0 0 0 / 0.6));
 
     @media (min-width: 1000px){
         grid-template-columns: 40% 60%;
-        gap: 0.5rem;
+        /* gap: 0.5rem; */
     }
 
     img {
@@ -66,9 +66,10 @@ const CardContainer = styled.div`
         object-fit: cover;
         object-position: center;
         border-radius: 0.5rem 0.5rem 0 0;
+        filter: drop-shadow(1px 0px 0px rgb(0 0 0 / 0.2));
         
         @media (min-width: 1000px){
-            border-radius: 0.5rem;
+            border-radius: 0.5rem 0 0 0.5rem;
         }
     }
 `;
@@ -85,10 +86,11 @@ const CardInfoContainer = styled.div`
     gap: 1rem;
 
     @media (min-width: 1000px){
-            border-radius: 0.5rem;
+            border-radius: 0 0.5rem 0.5rem 0;
         }
 
     p {
+        font-size: 15px;
         text-align: left;
     }
 `;
@@ -100,7 +102,7 @@ const CardContainerHeader = styled.div`
     text-align: left;
 
     h4 {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 600;
 
         small {
