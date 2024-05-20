@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const TopBarComponent = () => {
     const { theme, handleToggleTheme } = useTheme();
-    const [ activeLink, setActiveLink ] = useState('About');
+    const [ activeLink, setActiveLink ] = useState('');
 
     const links = [
         { href: '#stack', text: 'Stack' },
