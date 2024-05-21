@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FaLaptopCode } from "react-icons/fa";
+import { FiCodepen } from "react-icons/fi";
 import { frontList, testList, backList } from "./stack";
 
 const StackList = () => {
@@ -9,75 +9,76 @@ const StackList = () => {
                 <Icon />
                 Stack
             </SectionTitle>
+
+            <SectionSubtitle>
+                Technologies that I feel comfortable with:
+            </SectionSubtitle>
             
-            <StackContainer>
-                {
-                    // stack.map((stack, i) => {
-                    //     const separator = ", ";
-                    //     return (i === stackList.length - 1)
-                    //         ? <span key={i}>{stack}</span>
-                    //         : <span key={i}>{stack + separator}</span>
-                    // })
-                    frontList.map((stack, i) => {
-                        const { name, icon, color, docUrl } = stack;
-                        return <TechSpan 
-                            key={i} 
-                            style={color ? {backgroundColor:color} : {}}
-                        >
-                                    <a 
-                                        href={docUrl ? docUrl : ""}
-                                        target="_black" 
-                                        rel="noopener noreferrer"
-                                    >
-                                        <TechIcon src={icon ? icon : ""} alt="stack image" />
-                                        {name}
-                                    </a>
-                            </TechSpan>
-                    })
-                }
-            </StackContainer>
+            <StacklistContainer>
+                <StackContainer>
+                    {
+                        frontList.map((stack, i) => {
+                            const { name, icon, color, docUrl } = stack;
+                            return <TechSpan 
+                                key={i} 
+                                style={color ? {backgroundColor:color} : {}}
+                            >
+                                        <a 
+                                            href={docUrl ? docUrl : ""}
+                                            target="_black" 
+                                            rel="noopener noreferrer"
+                                        >
+                                            <TechIcon src={icon ? icon : ""} alt="stack image" />
+                                            {name}
+                                        </a>
+                                </TechSpan>
+                        })
+                    }
+                </StackContainer>
 
-            <StackContainer>
-                {
-                    testList.map((stack, i) => {
-                        const { name, icon, color, docUrl } = stack;
-                        return <TechSpan 
-                            key={i} 
-                            style={color ? {backgroundColor:color} : {}}
-                        >
-                                    <a 
-                                        href={docUrl ? docUrl : ""}
-                                        target="_black" 
-                                        rel="noopener noreferrer"
-                                    >
-                                        <TechIcon src={icon ? icon : ""} alt="stack image" />
-                                        {name}
-                                    </a>
-                            </TechSpan>
-                    })
-                }
-            </StackContainer>
+                <StackContainer>
+                    {
+                        testList.map((stack, i) => {
+                            const { name, icon, color, docUrl } = stack;
+                            return <TechSpan 
+                                key={i} 
+                                style={color ? {backgroundColor:color} : {}}
+                            >
+                                        <a 
+                                            href={docUrl ? docUrl : ""}
+                                            target="_black" 
+                                            rel="noopener noreferrer"
+                                        >
+                                            <TechIcon src={icon ? icon : ""} alt="stack image" />
+                                            {name}
+                                        </a>
+                                </TechSpan>
+                        })
+                    }
+                </StackContainer>
 
-            <StackContainer>
-                {
-                    backList.map((stack, i) => {
-                        const { name, icon, color, docUrl } = stack;
-                        return <TechSpan 
-                            key={i} 
-                            style={color ? {backgroundColor:color} : {}}
-                        >
-                                    <a 
-                                        href={docUrl ? docUrl : ""}
-                                        target="_black" 
-                                        rel="noopener noreferrer"
-                                    >
-                                        <TechIcon src={icon ? icon : ""} alt="stack image" />
-                                        {name}
-                                    </a>
-                            </TechSpan>
-                    })
-                }
-            </StackContainer>
+                <StackContainer>
+                    {
+                        backList.map((stack, i) => {
+                            const { name, icon, color, docUrl } = stack;
+                            return <TechSpan 
+                                key={i} 
+                                style={color ? {backgroundColor:color} : {}}
+                            >
+                                        <a 
+                                            href={docUrl ? docUrl : ""}
+                                            target="_black" 
+                                            rel="noopener noreferrer"
+                                        >
+                                            <TechIcon src={icon ? icon : ""} alt="stack image" />
+                                            {name}
+                                        </a>
+                                </TechSpan>
+                        })
+                    }
+                </StackContainer>
+            </StacklistContainer>
+            
         </StackSection>
     );
 }
@@ -88,6 +89,10 @@ const StackSection = styled.section`
     @media (min-width: 1000px){
         padding-top: 7rem;
     }
+`;
+
+const StacklistContainer = styled.div`
+    margin-top: 2rem;
 `;
 
 const StackContainer = styled.div`
@@ -128,10 +133,16 @@ const SectionTitle = styled.h2`
     display: flex;
     align-items: center;
     column-gap: 0.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 `;
 
-const Icon = styled(FaLaptopCode)`
+const SectionSubtitle = styled.small`
+    font-size: 14px;
+    font-weight: 400;
+    filter: invert(15%);
+`;
+
+const Icon = styled(FiCodepen)`
     width: 1.75rem;
     height: 1.75rem;
 `;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { IoPersonCircleOutline } from "react-icons/io5";
+import { IoPerson } from "react-icons/io5";
 import { GrDocumentPdf } from "react-icons/gr";
 
 const AboutMe = () => {
@@ -53,7 +53,7 @@ const SectionTitle = styled.h2`
     margin-bottom: 2rem;
 `;
 
-const Icon = styled(IoPersonCircleOutline)`
+const Icon = styled(IoPerson)`
     width: 1.75rem;
     height: 1.75rem;
 `;
