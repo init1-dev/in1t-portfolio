@@ -12,24 +12,10 @@ export interface ProjectInterface {
 
 export const projectsList: ProjectInterface[] = [
     {
-        name: "Oxygen Shop",
-        subtitle: "oxygen-shop",
-        technologies: [
-            "html",
-            "scss",
-            "js"
-        ],
-        description: "Shop landing page developed using Html, Scss and JavaScript",
-        links: {
-            img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/oxygenshop.png",
-            code: "https://github.com/init1-dev/oxygen-shop",
-            demo: "https://init1-dev.github.io/oxygen-shop/"
-        }
-    },
-    {
         name: "React Image Search",
         subtitle: "react-image-search-app",
         technologies: [
+            "responsive",
             "react",
             "router",
             "redux",
@@ -43,9 +29,27 @@ export const projectsList: ProjectInterface[] = [
         }
     },
     {
+        name: "Miranda Dashboard",
+        subtitle: "hotel-miranda-dashboard",
+        technologies: [
+            "Desktop",
+            "react",
+            "router",
+            "redux",
+            "typescript"
+        ],
+        description: "Hotel dashboard app made using React with styled-components (only desktop, no responsive)",
+        links: {
+            img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-dashboard.png",
+            code: "https://github.com/init1-dev/hotel-miranda-dashboard",
+            demo: "http://hotel-miranda-dashboard-init.s3-website.eu-west-3.amazonaws.com/login"
+        }
+    },
+    {
         name: "Miranda Web",
         subtitle: "hotel-miranda-web",
         technologies: [
+            "responsive",
             "html",
             "scss",
             "js"
@@ -58,19 +62,19 @@ export const projectsList: ProjectInterface[] = [
         }
     },
     {
-        name: "Miranda Dashboard",
-        subtitle: "hotel-miranda-dashboard",
+        name: "Oxygen Shop",
+        subtitle: "oxygen-shop",
         technologies: [
-            "react",
-            "router",
-            "redux",
-            "typescript"
+            "responsive",
+            "html",
+            "scss",
+            "js"
         ],
-        description: "Hotel dashboard app made using React with styled-components (only desktop, no responsive)",
+        description: "Shop landing page developed using Html, Scss and JavaScript",
         links: {
-            img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-dashboard.png",
-            code: "https://github.com/init1-dev/hotel-miranda-dashboard",
-            demo: "http://hotel-miranda-dashboard-init.s3-website.eu-west-3.amazonaws.com/login"
+            img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/oxygenshop.png",
+            code: "https://github.com/init1-dev/oxygen-shop",
+            demo: "https://init1-dev.github.io/oxygen-shop/"
         }
     },
 ];

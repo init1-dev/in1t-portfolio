@@ -12,15 +12,15 @@ const AboutMe = () => {
 
             <SectionContent>
                 <p>
-                    Soy una persona muy inquieta y curiosa. Comencé estudiando informática y posteriormente decidí estudiar un máster en 3D y animación en la escuela Trazos, Madrid.
+                    I am a very restless and curious person. I started studying <St>computer science</St> and later I decided to study a master's degree in <St>3D and animation</St> at <St>Trazos school</St>, Madrid.
                 </p>
 
                 <p>
-                    También me he formado en fotografía, trabajé como fotógrafo de arquitectura desde el año 2015, hasta 2021, durante este periodo realicé diversos proyectos, algunos de los cuales han sido publicados tanto a nivel nacional como internacional en plataformas como ArchDaily o Premios Enor de Arquitectura.
+                    I have also trained in <St>photography</St>, I worked as an <St>architectural photographer</St> from 2015, until 2021, during this period I made several projects, some of which have been published both nationally and internationally on platforms such as <St>ArchDaily</St> or <St>Enor Architecture Awards</St>.
                 </p>
 
                 <p>
-                    Posteriormente retomé mi formación en programación. Desde marzo de 2021 hasta enero de 2022 realicé diversos cursos de programación, un certificado de profesionalidad en "Programación orientada a objetos y bases de datos relacionales" y actualmente desarrollo un proyecto del sector turístico en OXYGEN trabajando con programadores senior.
+                    Subsequently I resumed my training in programming. From March 2021 to January 2022 I took several programming courses, a professional certificate in <St>“Object Oriented Programming and Relational Databases”</St> and I am currently developing a project in the tourism sector in <St>OXYGEN</St> working with senior programmers.
                 </p>
 
                 <StyledLink
@@ -29,7 +29,7 @@ const AboutMe = () => {
                     rel="noopener noreferrer"
                 >
                     <GrDocumentPdf />
-                    Link to my CV
+                    Download CV
                 </StyledLink>
 
             </SectionContent>
@@ -81,6 +81,10 @@ const StyledLink = styled.a`
     &:hover {
         color: ${({ theme }) => theme.menuActive};
     }
+`;
+
+const St = styled.strong`
+    color: ${({ theme }) => theme.strongText};
 `;
 
 export default AboutMe;

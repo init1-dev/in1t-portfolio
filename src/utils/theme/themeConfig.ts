@@ -15,6 +15,7 @@ export interface Theme {
     cardButtonBg: string;
     cardButtonText: string;
     stackBg: string;
+    strongText: string;
 }
 
 export const lightTheme: Theme = {
@@ -31,7 +32,8 @@ export const lightTheme: Theme = {
     cardText: 'black',
     cardButtonBg: '#333886',
     cardButtonText: 'white',
-    stackBg: '#e9e9e9'
+    stackBg: '#e9e9e9',
+    strongText: 'rgb(213 162 3)'
 };
 
 export const darkTheme: Theme = {
@@ -48,7 +50,8 @@ export const darkTheme: Theme = {
     cardText: 'white',
     cardButtonBg: '#333886',
     cardButtonText: 'white',
-    stackBg: '#2b3247'
+    stackBg: '#2b3247',
+    strongText: 'rgb(254 240 138 / 1)'
 };
 
 export const GlobalStyles = createGlobalStyle<{ theme?: Theme }>`
