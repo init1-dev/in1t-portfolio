@@ -48,6 +48,12 @@ export const frontList = [
         color: "",
         docUrl: "https://reactrouter.com/en/main"
     },
+    {
+        name: "REDUX",
+        icon: "/redux.svg",
+        color: "",
+        docUrl: "https://redux.js.org/"
+    },
 ];
 
 export const testList = [
@@ -71,6 +77,12 @@ export const backList = [
         icon: "/nodejs.svg",
         color: "",
         docUrl: "https://nodejs.org/docs/latest/api/"
+    },
+    {
+        name: "MYSQL",
+        icon: "/mysql.png",
+        color: "",
+        docUrl: "https://dev.mysql.com/doc/"
     },
     {
         name: "EXPRESS",
