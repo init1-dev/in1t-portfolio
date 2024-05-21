@@ -29,7 +29,9 @@ const AboutMe = () => {
                     rel="noopener noreferrer"
                 >
                     <GrDocumentPdf />
-                    Download CV
+                    <span>
+                        Download CV
+                    </span>
                 </StyledLink>
 
             </SectionContent>
@@ -66,7 +68,7 @@ const SectionContent = styled.div`
     }
 `;
 
-const StyledLink = styled.a`
+export const StyledLink = styled.a`
     cursor: pointer;
     width: fit-content;
     display: flex;
@@ -74,12 +76,20 @@ const StyledLink = styled.a`
     gap: 0.5rem;
     padding: 0.3rem 1rem;
     border-radius: 0.5rem;
-    color: ${({ theme }) => theme.cardButtonText};
-    background-color: ${({ theme }) => theme.cardButtonBg};
+    color: ${({ theme }) => theme.theme === 'light' 
+        ? 'white'
+        : 'white'};
+    background-color: ${({ theme }) => theme.theme === 'light' 
+        ? '#494d8a'
+        : '#333779'};
     filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
 
     &:hover {
         color: ${({ theme }) => theme.menuActive};
+
+        span {
+            filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
+        }
     }
 `;
 

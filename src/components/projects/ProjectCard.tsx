@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { ProjectInterface } from "./projects";
 import { FiGithub } from "react-icons/fi";
 import { FiLink } from "react-icons/fi";
+import { StyledLink } from "../about/AboutMe";
 
 interface ProjectCardProps {
     project: ProjectInterface
@@ -35,12 +36,16 @@ const ProjectCard = ({
                 <ButtonsContainer>
                     <StyledLink href={code} target="_black" rel="noopener noreferrer">
                         <FiGithub />
-                        Code
+                        <span>
+                            Code
+                        </span>
                     </StyledLink>
                     
                     <StyledLink href={demo} target="_black" rel="noopener noreferrer">
                         <FiLink />
-                        Preview
+                        <span>
+                            Preview
+                        </span>
                     </StyledLink>
                 </ButtonsContainer>
             </CardInfoContainer>
@@ -75,8 +80,12 @@ const CardContainer = styled.div`
 
 const CardInfoContainer = styled.div`
     padding: 1rem;
-    color: ${({ theme }) => theme.cardText};
-    background-color: ${({ theme }) => theme.cardBg};
+    color: ${({ theme }) => theme.theme === 'light' 
+        ? 'black'
+        : 'white'};
+    background-color: ${({ theme }) => theme.theme === 'light' 
+        ? '#e9e9e9'
+        : '#272e41'};
     border-radius: 0 0 0.5rem 0.5rem;
     display: flex;
     flex-direction: column;
@@ -128,22 +137,6 @@ const TechnologySpan = styled.span`
 const ButtonsContainer = styled.div`
     display: flex;
     gap: 0.5rem;
-`;
-
-const StyledLink = styled.a`
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.3rem 1rem;
-    border-radius: 0.5rem;
-    color: ${({ theme }) => theme.cardButtonText};
-    background-color: ${({ theme }) => theme.cardButtonBg};
-    filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
-
-    &:hover {
-        color: ${({ theme }) => theme.menuActive};
-    }
 `;
 
 export default ProjectCard;

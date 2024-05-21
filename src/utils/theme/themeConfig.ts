@@ -10,10 +10,6 @@ export interface Theme {
     footerText: string;
     spanBg: string;
     spanText: string;
-    cardBg: string;
-    cardText: string;
-    cardButtonBg: string;
-    cardButtonText: string;
     stackBg: string;
     strongText: string;
 }
@@ -28,10 +24,6 @@ export const lightTheme: Theme = {
     footerText: '#8c8c8c',
     spanBg: '#bec0c5',
     spanText: 'black',
-    cardBg: '#e9e9e9',
-    cardText: 'black',
-    cardButtonBg: '#333886',
-    cardButtonText: 'white',
     stackBg: '#e9e9e9',
     strongText: 'rgb(213 162 3)'
 };
@@ -46,10 +38,6 @@ export const darkTheme: Theme = {
     footerText: '#878788',
     spanBg: '#1f2534',
     spanText: 'white',
-    cardBg: '#272e41',
-    cardText: 'white',
-    cardButtonBg: '#333886',
-    cardButtonText: 'white',
     stackBg: '#2b3247',
     strongText: 'rgb(254 240 138 / 1)'
 };
