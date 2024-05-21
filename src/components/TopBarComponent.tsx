@@ -69,16 +69,27 @@ const NavBar = styled.nav`
     gap: 1.5rem;
     background-color: ${({ theme }) => theme.headerBg};
     filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
+    /* box-shadow: var(--shadow-elevation-medium); */
+    
 
     @media (min-width: 1000px) {
         padding: 0.5rem 2rem;
         width: unset;
         border-radius: 0.5rem;
+
+        transition: transform 0.3s ease, filter 0.3s ease;
+        filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
+        
+        &:hover {
+            transform: scale(1.1);
+            /* transform-origin: top; */
+            filter: drop-shadow(5px 5px 7px rgb(0 0 0 / 0.25));
+        }
     }
 
     a {
-        font-size: 15px;
-        font-weight: 500;
+        font-size: 18px;
+        font-weight: 600;
         margin: auto 0;
         color: ${({ theme }) => theme.text};
         transition: transform 0.2s ease, color 0.2s ease;
@@ -91,6 +102,11 @@ const NavBar = styled.nav`
 
         &[aria-selected="true"] {
             color: ${({ theme }) => theme.menuActive};
+        }
+
+        @media (min-width: 1000px) {
+            font-size: 15px;
+            font-weight: 500;
         }
     }
 `;
