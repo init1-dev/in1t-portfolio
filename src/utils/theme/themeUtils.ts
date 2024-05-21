@@ -6,5 +6,5 @@ export const toggleTheme = (currentTheme: string) => {
 
 export const loadTheme = () => {
     const persistedState = localStorage.getItem("__current__theme__");
-    return persistedState ? persistedState : 'light';
+    return persistedState ? persistedState : 'dark';
 };

@@ -66,23 +66,6 @@ const SectionContent = styled.div`
     }
 `;
 
-// const StyledLink = styled.a`
-//     /* display: flex;
-//     align-items: center;
-//     gap: 0.5rem; */
-//     font-size: 15px;
-//     font-weight: 500;
-//     margin: auto 0;
-//     color: ${({ theme }) => theme.footerText};
-//     transition: transform 0.2s ease;
-//     text-rendering: optimizeLegibility;
-
-//     &:hover {
-//         color: ${({ theme }) => theme.menuActive};
-//         transform: scale(1.12);
-//     }
-// `;
-
 const StyledLink = styled.a`
     cursor: pointer;
     width: fit-content;

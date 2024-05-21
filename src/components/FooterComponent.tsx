@@ -90,10 +90,6 @@ const FooterLink = styled.a`
         color: ${({ theme }) => theme.menuActive};
         transform: scale(1.12);
     }
-
-    &[aria-selected="true"] {
-        color: ${({ theme }) => theme.menuActive};
-    }
 `;
 
 export default FooterComponent;
