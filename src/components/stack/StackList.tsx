@@ -102,6 +102,11 @@ const StackContainer = styled.div`
     margin: 0.8rem 0;
 `;
 
+const TechIcon = styled.img`
+    width: 24px;
+    height: 24px;
+`;
+
 const TechSpan = styled.span`
     cursor: pointer;
     display: flex;
@@ -117,6 +122,10 @@ const TechSpan = styled.span`
         filter: drop-shadow(1px 1px 1.5px rgb(0 0 0 / 0.6));
         color: black;
         background-color: ${({ theme }) => theme.menuActive};
+
+        ${TechIcon} {
+            filter: drop-shadow(1px 1px 2.5px black);
+        }
     }
 
     a {
@@ -124,11 +133,6 @@ const TechSpan = styled.span`
         display: flex;
         gap: 0.5rem;
     }
-`;
-
-const TechIcon = styled.img`
-    width: 24px;
-    height: 24px;
 `;
 
 const SectionTitle = styled.h2`
