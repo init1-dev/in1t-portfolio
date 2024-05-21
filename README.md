@@ -35,16 +35,10 @@ $npm run dev
 ```
 
 ## Next Updates
-- About
-- Stack
 - Language functionality (en/es)
 
 ### TODO:
-- Add cv button in about
 - Add about img
-- Add projects img
-- improve projects styles
-- Fix styles to be fully responsive
 - Contact
 
 ## Contact
