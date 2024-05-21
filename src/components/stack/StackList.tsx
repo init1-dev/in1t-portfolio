@@ -106,7 +106,7 @@ const TechSpan = styled.span`
     cursor: pointer;
     display: flex;
     padding: 0.5rem;
-    background-color: ${({ theme }) => theme.cardBg};
+    background-color: ${({ theme }) => theme.stackBg};
     filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
     border-radius: 0.5rem;
     transition: transform 0.3s ease;
@@ -115,6 +115,8 @@ const TechSpan = styled.span`
     &:hover {
         transform: scale(1.1);
         filter: drop-shadow(1px 1px 1.5px rgb(0 0 0 / 0.6));
+        color: black;
+        background-color: ${({ theme }) => theme.menuActive};
     }
 
     a {
