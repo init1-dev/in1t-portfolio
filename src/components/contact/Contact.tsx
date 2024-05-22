@@ -1,13 +1,18 @@
-import styled from "styled-components";
-import { RiContactsBook2Line } from "react-icons/ri";
+import { useState } from "react";
+import { ContactForm, ContactSection, Description, Icon, InnerSpan, Input, InputContainer, InputsContainer, Link, SectionTitle, StyledItem, StyledList, SubmitButton, TextArea, TextAreaContainer } from "./StyledContactForm";
+import { handleSubmit } from "./handleContactForm";
 
 const Contact = () => {
+    const [ loading, setLoading ] = useState(false);
+
     return (
         <ContactSection id="contact">
             <SectionTitle>
                 <Icon />
                 Contact
             </SectionTitle>
+
+            <Description>You can contact me by any of the following ways or by filling out the form below.</Description>
 
             <StyledList>
                 <StyledItem>
@@ -35,69 +40,31 @@ const Contact = () => {
                         init1-dev</Link>
                 </StyledItem>
             </StyledList>
+
+
+            <ContactForm onSubmit={(e) => handleSubmit(e, setLoading)}>
+                <InnerSpan>( This form is currently under development )</InnerSpan>
+                <div className="form-group">
+                    <InputsContainer className="form-row">
+                        <InputContainer className="col">
+                            <Input type="text" name="name" className="form-control" placeholder="Full Name" required />
+                        </InputContainer>
+                        
+                        <InputContainer className="col">
+                            <Input type="email" name="email" className="form-control" placeholder="Email Address" required />
+                        </InputContainer>
+                    </InputsContainer>
+                </div>
+                <TextAreaContainer className="form-group">
+                    <TextArea placeholder="Your Message" className="form-control" name="message" rows={10} required></TextArea>
+                </TextAreaContainer>
+                <SubmitButton disabled={true} type="submit" className="">
+                    {loading ? <span className="loader"></span> : "Submit Form"}
+                </SubmitButton>
+            </ContactForm>
+
         </ContactSection>
     );
 }
-
-const ContactSection = styled.section`
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-    
-    @media (min-width: 1000px) {
-        padding-top: 7rem;
-        padding-bottom: 5rem;
-    }
-`;
-
-const SectionTitle = styled.h2`
-    display: flex;
-    align-items: center;
-    column-gap: 0.75rem;
-    margin-bottom: 2rem;
-`;
-
-const Icon = styled(RiContactsBook2Line)`
-    width: 1.75rem;
-    height: 1.75rem;
-`;
-
-const StyledList = styled.ul`
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 1.5rem;
-
-    @media (min-width: 1000px) {
-        flex-direction: row;
-        gap: 2.5rem;
-    }
-`;
-
-const StyledItem = styled.li`
-    display: flex;
-    gap: 0.5rem;
-`;
-
-const Link = styled.a`
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 15px;
-    font-weight: 500;
-    margin: auto 0;
-    color: ${({ theme }) => theme.footerText};
-    transition: transform 0.2s ease;
-    text-rendering: optimizeLegibility;
-
-    &:hover {
-        cursor: pointer;
-        color: ${({ theme }) => theme.menuActive};
-    }
-
-    &[aria-selected="true"] {
-        color: ${({ theme }) => theme.menuActive};
-    }
-`;
 
 export default Contact;
