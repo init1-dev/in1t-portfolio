@@ -1,7 +1,8 @@
 export interface ProjectInterface {
     name: string;
     subtitle: string;
-    technologies: string[];
+    design: string;
+    technologies: technologyInterface[];
     description: string;
     links: {
         img: string;
@@ -10,16 +11,33 @@ export interface ProjectInterface {
     }
 }
 
+interface technologyInterface {
+    name: string;
+    icon: string;
+}
+
 export const projectsList: ProjectInterface[] = [
     {
         name: "React Image Search",
         subtitle: "react-image-search-app",
+        design: "responsive",
         technologies: [
-            "responsive",
-            "react",
-            "router",
-            "redux",
-            "typescript"
+            {
+                name: "react",
+                icon: "/react.svg"
+            },
+            {
+                name: "router",
+                icon: "/react-router.png"
+            },
+            {
+                name: "redux",
+                icon: "/redux.svg"
+            },
+            {
+                name: "typescript",
+                icon: "/typescript.svg"
+            },
         ],
         description: "Responsive image search app made using React, TypeScript and Redux with styled-components",
         links: {
@@ -31,14 +49,26 @@ export const projectsList: ProjectInterface[] = [
     {
         name: "Miranda Dashboard",
         subtitle: "hotel-miranda-dashboard",
+        design: "desktop",
         technologies: [
-            "Desktop",
-            "react",
-            "router",
-            "redux",
-            "typescript"
+            {
+                name: "react",
+                icon: "/react.svg"
+            },
+            {
+                name: "router",
+                icon: "/react-router.png"
+            },
+            {
+                name: "redux",
+                icon: "/redux.svg"
+            },
+            {
+                name: "typescript",
+                icon: "/typescript.svg"
+            },
         ],
-        description: "Hotel dashboard app made using React with styled-components (only desktop, no responsive)",
+        description: "Hotel dashboard app made using React, TypeScript and Redux with styled-components (only desktop)",
         links: {
             img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-dashboard.png",
             code: "https://github.com/init1-dev/hotel-miranda-dashboard",
@@ -48,13 +78,22 @@ export const projectsList: ProjectInterface[] = [
     {
         name: "Miranda Web",
         subtitle: "hotel-miranda-web",
+        design: "responsive",
         technologies: [
-            "responsive",
-            "html",
-            "scss",
-            "js"
+            {
+                name: "html",
+                icon: "/HTML5.svg"
+            },
+            {
+                name: "scss",
+                icon: "/sass.svg"
+            },
+            {
+                name: "js",
+                icon: "/javascript.svg"
+            },
         ],
-        description: "Miranda Hotel web using HTML/CSS",
+        description: "Responsive hotel website made using Html, Scss and JavaScript",
         links: {
             img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-hotel.png",
             code: "https://github.com/init1-dev/hotel-miranda-web",
@@ -64,13 +103,22 @@ export const projectsList: ProjectInterface[] = [
     {
         name: "Oxygen Shop",
         subtitle: "oxygen-shop",
+        design: "responsive",
         technologies: [
-            "responsive",
-            "html",
-            "scss",
-            "js"
+            {
+                name: "html",
+                icon: "/HTML5.svg"
+            },
+            {
+                name: "scss",
+                icon: "/sass.svg"
+            },
+            {
+                name: "js",
+                icon: "/javascript.svg"
+            },
         ],
-        description: "Shop landing page developed using Html, Scss and JavaScript",
+        description: "Responsive shop landing page made using Html, Scss and JavaScript",
         links: {
             img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/oxygenshop.png",
             code: "https://github.com/init1-dev/oxygen-shop",
@@ -78,18 +126,3 @@ export const projectsList: ProjectInterface[] = [
         }
     },
 ];
-
-/*
-{
-    name: "",
-    subtitle: "",
-    technologies: [
-        
-    ],
-    description: "",
-    links: {
-        code: "",
-        demo: ""
-    }
-},
-*/

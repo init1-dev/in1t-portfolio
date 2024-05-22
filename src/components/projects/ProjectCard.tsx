@@ -11,12 +11,12 @@ interface ProjectCardProps {
 const ProjectCard = ({
     project
 }: ProjectCardProps) => {
-    const { name, subtitle, technologies, description, links } = project;
+    const { name, subtitle, design, technologies, description, links } = project;
     const { img, code, demo } = links;
 
     return (
         <CardContainer>
-            <img src={img} alt="project image" />
+            <ProjectImg src={img} alt="project image" />
 
             <CardInfoContainer>
                 <CardContainerHeader>
@@ -25,8 +25,15 @@ const ProjectCard = ({
                         <small>({subtitle})</small>
                     </h4>
                     <TechnologyContainer>
+                        <TechnologySpan>
+                            {design}
+                        </TechnologySpan>
                         {
-                            technologies.map((el, i) => <TechnologySpan key={i}>{el}</TechnologySpan>)
+                            technologies.map((el, i) => 
+                                <TechnologyIcon key={i}>
+                                    {/* {el.name} */}
+                                    <TechImg src={el.icon} alt={el.name + "-image"} />
+                                </TechnologyIcon>)
                         }
                     </TechnologyContainer>
                 </CardContainerHeader>
@@ -62,19 +69,19 @@ const CardContainer = styled.div`
     @media (min-width: 1000px){
         grid-template-columns: 40% 60%;
     }
+`;
 
-    img {
-        width: 100%;
-        height: 100%;
-        aspect-ratio: 7/5;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 0.5rem 0.5rem 0 0;
-        filter: drop-shadow(1px 0px 0px rgb(0 0 0 / 0.2));
-        
-        @media (min-width: 1000px){
-            border-radius: 0.5rem 0 0 0.5rem;
-        }
+const ProjectImg = styled.img`
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 7/5;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem 0.5rem 0 0;
+    filter: drop-shadow(1px 0px 0px rgb(0 0 0 / 0.2));
+    
+    @media (min-width: 1000px){
+        border-radius: 0.5rem 0 0 0.5rem;
     }
 `;
 
@@ -125,13 +132,26 @@ const TechnologyContainer = styled.div`
     gap: 0.5rem;
 `;
 
-const TechnologySpan = styled.span`
-    padding: 0.2rem 0.8rem;
+const TechnologyIcon = styled.span`
+    display: flex;
+    align-items: center;
     font-size: 0.8rem;
     border-radius: 0.5rem;
     color: ${({ theme }) => theme.spanText};
+`;
+
+const TechnologySpan = styled(TechnologyIcon)`
+    padding: 0.2rem 0.8rem;
     background-color: ${({ theme }) => theme.spanBg};
     filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
+`;
+
+
+
+const TechImg = styled.img`
+    width: 24px;
+    height: 24px;
+    filter: drop-shadow(1px 1px 0.5px rgb(0 0 0 / 0.6));
 `;
 
 const ButtonsContainer = styled.div`
