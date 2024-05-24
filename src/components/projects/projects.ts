@@ -68,7 +68,7 @@ export const projectsList: ProjectInterface[] = [
                 icon: "/php.svg"
             },
         ],
-        description: "Responsive hotel website made using Html, Scss and JavaScript.",
+        description: "Responsive hotel website made using Html, Scss, JavaScript and PHP.",
         links: {
             img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-hotel.png",
             code: "https://github.com/init1-dev/hotel-miranda-PHP",
