@@ -20,7 +20,7 @@ export const projectsList: ProjectInterface[] = [
     {
         name: "React Image Search",
         subtitle: "react-image-search-app",
-        design: "responsive",
+        design: "Responsive",
         technologies: [
             {
                 name: "react",
@@ -39,7 +39,7 @@ export const projectsList: ProjectInterface[] = [
                 icon: "/typescript.svg"
             },
         ],
-        description: "Responsive image search app made using React, TypeScript and Redux with styled-components",
+        description: "Responsive image search app made using React, TypeScript and Redux with styled-components.",
         links: {
             img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/image-search.png",
             code: "https://github.com/init1-dev/react-image-search-app",
@@ -47,9 +47,63 @@ export const projectsList: ProjectInterface[] = [
         }
     },
     {
+        name: "Miranda Web PHP",
+        subtitle: "hotel-miranda-PHP",
+        design: "Responsive",
+        technologies: [
+            {
+                name: "html",
+                icon: "/HTML5.svg"
+            },
+            {
+                name: "scss",
+                icon: "/sass.svg"
+            },
+            {
+                name: "js",
+                icon: "/javascript.svg"
+            },
+            {
+                name: "php",
+                icon: "/php.svg"
+            },
+        ],
+        description: "Responsive hotel website made using Html, Scss and JavaScript.",
+        links: {
+            img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-hotel.png",
+            code: "https://github.com/init1-dev/hotel-miranda-PHP",
+            demo: "http://13.39.112.151/"
+        }
+    },
+    // {
+    //     name: "Miranda Web",
+    //     subtitle: "hotel-miranda-web",
+    //     design: "Responsive",
+    //     technologies: [
+    //         {
+    //             name: "html",
+    //             icon: "/HTML5.svg"
+    //         },
+    //         {
+    //             name: "scss",
+    //             icon: "/sass.svg"
+    //         },
+    //         {
+    //             name: "js",
+    //             icon: "/javascript.svg"
+    //         },
+    //     ],
+    //     description: "Responsive hotel website made using Html, Scss and JavaScript.",
+    //     links: {
+    //         img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-hotel.png",
+    //         code: "https://github.com/init1-dev/hotel-miranda-web",
+    //         demo: "http://hotel-miranda-web.s3-website.eu-west-3.amazonaws.com/"
+    //     }
+    // },
+    {
         name: "Miranda Dashboard",
         subtitle: "hotel-miranda-dashboard",
-        design: "desktop",
+        design: "Desktop",
         technologies: [
             {
                 name: "react",
@@ -68,7 +122,7 @@ export const projectsList: ProjectInterface[] = [
                 icon: "/typescript.svg"
             },
         ],
-        description: "Hotel dashboard app made using React, TypeScript and Redux with styled-components (only desktop)",
+        description: "Hotel dashboard app made using React, TypeScript and Redux with styled-components (only desktop).",
         links: {
             img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-dashboard.png",
             code: "https://github.com/init1-dev/hotel-miranda-dashboard",
@@ -76,34 +130,34 @@ export const projectsList: ProjectInterface[] = [
         }
     },
     {
-        name: "Miranda Web",
-        subtitle: "hotel-miranda-web",
-        design: "responsive",
+        name: "Hotel Miranda Node API",
+        subtitle: "typescript-node-express",
+        design: "API",
         technologies: [
             {
-                name: "html",
-                icon: "/HTML5.svg"
+                name: "node",
+                icon: "/nodejs.svg"
             },
             {
-                name: "scss",
-                icon: "/sass.svg"
+                name: "express",
+                icon: "/express.svg"
             },
             {
-                name: "js",
-                icon: "/javascript.svg"
+                name: "typescript",
+                icon: "/typescript.svg"
             },
         ],
-        description: "Responsive hotel website made using Html, Scss and JavaScript",
+        description: "Hotel Miranda dashbord project API made using NodeJs, Express and TypeScript.",
         links: {
-            img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-hotel.png",
-            code: "https://github.com/init1-dev/hotel-miranda-web",
-            demo: "http://hotel-miranda-web.s3-website.eu-west-3.amazonaws.com/"
+            img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/dashboard_API.png",
+            code: "https://github.com/init1-dev/typescript-node-express",
+            demo: "https://4oi46otzmb.execute-api.eu-west-3.amazonaws.com/dev/"
         }
     },
     {
         name: "Oxygen Shop",
         subtitle: "oxygen-shop",
-        design: "responsive",
+        design: "Responsive",
         technologies: [
             {
                 name: "html",
@@ -118,7 +172,7 @@ export const projectsList: ProjectInterface[] = [
                 icon: "/javascript.svg"
             },
         ],
-        description: "Responsive shop landing page made using Html, Scss and JavaScript",
+        description: "Responsive shop landing page made using Html, Scss and JavaScript.",
         links: {
             img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/oxygenshop.png",
             code: "https://github.com/init1-dev/oxygen-shop",
