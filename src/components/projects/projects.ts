@@ -72,7 +72,7 @@ export const projectsList: ProjectInterface[] = [
         links: {
             img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-hotel.png",
             code: "https://github.com/init1-dev/hotel-miranda-PHP",
-            demo: "http://13.39.112.151/"
+            demo: "http://ec2-13-39-112-151.eu-west-3.compute.amazonaws.com/"
         }
     },
     // {
