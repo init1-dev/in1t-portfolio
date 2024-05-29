@@ -72,7 +72,40 @@ export const projectsList: ProjectInterface[] = [
         links: {
             img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-hotel.png",
             code: "https://github.com/init1-dev/hotel-miranda-PHP",
-            demo: "http://ec2-13-39-112-151.eu-west-3.compute.amazonaws.com/"
+            demo: "https://miranda-php.in1t.dev/"
+        }
+    },
+    {
+        name: "Miranda Web Laravel",
+        subtitle: "miranda-laravel",
+        design: "Responsive",
+        technologies: [
+            {
+                name: "html",
+                icon: "/HTML5.svg"
+            },
+            {
+                name: "scss",
+                icon: "/sass.svg"
+            },
+            {
+                name: "js",
+                icon: "/javascript.svg"
+            },
+            {
+                name: "php",
+                icon: "/php.svg"
+            },
+            {
+                name: "laravel",
+                icon: "/laravel.svg"
+            },
+        ],
+        description: "Responsive hotel website made using Html, Scss, JavaScript and PHP with Laravel.",
+        links: {
+            img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-hotel.png",
+            code: "https://github.com/init1-dev/miranda-laravel",
+            demo: "https://miranda-laravel.in1t.dev/"
         }
     },
     // {
