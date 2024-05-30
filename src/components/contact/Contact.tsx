@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { ContactForm, ContactSection, Description, Icon, InnerSpan, Input, InputContainer, InputsContainer, Link, SectionTitle, StyledItem, StyledList, SubmitButton, TextArea, TextAreaContainer } from "./StyledContactForm";
+import { ContactForm, ContactSection, Description, Icon, Input, InputContainer, InputsContainer, Link, SectionTitle, StyledItem, StyledList, SubmitButton, TextArea, TextAreaContainer } from "./StyledContactForm";
+import { MdAlternateEmail } from "react-icons/md";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
 import { handleSubmit } from "./handleContactForm";
 
 const Contact = () => {
@@ -16,12 +19,12 @@ const Contact = () => {
 
             <StyledList>
                 <StyledItem>
-                    <p>Email:</p>
+                    <MdAlternateEmail />
                     <Link href="mailto:init1.dev@gmail.com">init1.dev@gmail.com</Link>
                 </StyledItem>
                 
                 <StyledItem>
-                    <p>LinkedIn:</p>
+                    <FaLinkedinIn />
                     <Link
                         href="https://www.linkedin.com/in/in1t-jorge-guillen/" 
                         target="_black" 
@@ -31,7 +34,7 @@ const Contact = () => {
                 </StyledItem>
                 
                 <StyledItem>
-                    <p>GitHub:</p>
+                    <FiGithub />
                     <Link
                         href="https://github.com/init1-dev"
                         target="_black"
@@ -43,22 +46,25 @@ const Contact = () => {
 
 
             <ContactForm onSubmit={(e) => handleSubmit(e, setLoading)}>
-                <InnerSpan>( This form is currently under development )</InnerSpan>
+                {/* <InnerSpan>( This form is currently under development )</InnerSpan> */}
                 <div className="form-group">
                     <InputsContainer className="form-row">
                         <InputContainer className="col">
-                            <Input type="text" name="name" className="form-control" placeholder="Full Name" required />
+                            <label htmlFor="name">Fullname:</label>
+                            <Input type="text" name="name" className="form-control" placeholder="Insert your name" required />
                         </InputContainer>
                         
                         <InputContainer className="col">
-                            <Input type="email" name="email" className="form-control" placeholder="Email Address" required />
+                            <label htmlFor="email">Email:</label>
+                            <Input type="email" name="email" className="form-control" placeholder="Insert your email" required />
                         </InputContainer>
                     </InputsContainer>
                 </div>
                 <TextAreaContainer className="form-group">
-                    <TextArea placeholder="Your Message" className="form-control" name="message" rows={10} required></TextArea>
+                    <label htmlFor="message">Message:</label>
+                    <TextArea placeholder="Insert your message" className="form-control" name="message" rows={10} required></TextArea>
                 </TextAreaContainer>
-                <SubmitButton disabled={true} type="submit" className="">
+                <SubmitButton disabled={loading} type="submit" className="">
                     {loading ? <span className="loader"></span> : "Submit Form"}
                 </SubmitButton>
             </ContactForm>

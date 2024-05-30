@@ -46,35 +46,60 @@ export const projectsList: ProjectInterface[] = [
             demo: "http://react-image-search-app.s3-website.eu-west-3.amazonaws.com/"
         }
     },
-    {
-        name: "Miranda Web PHP",
-        subtitle: "hotel-miranda-PHP",
-        design: "Responsive",
-        technologies: [
-            {
-                name: "html",
-                icon: "/HTML5.svg"
-            },
-            {
-                name: "scss",
-                icon: "/sass.svg"
-            },
-            {
-                name: "js",
-                icon: "/javascript.svg"
-            },
-            {
-                name: "php",
-                icon: "/php.svg"
-            },
-        ],
-        description: "Responsive hotel website made using Html, Scss, JavaScript and PHP.",
-        links: {
-            img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-hotel.png",
-            code: "https://github.com/init1-dev/hotel-miranda-PHP",
-            demo: "https://miranda-php.in1t.dev/"
-        }
-    },
+     // {
+    //     name: "Miranda Web",
+    //     subtitle: "hotel-miranda-web",
+    //     design: "Responsive",
+    //     technologies: [
+    //         {
+    //             name: "html",
+    //             icon: "/HTML5.svg"
+    //         },
+    //         {
+    //             name: "scss",
+    //             icon: "/sass.svg"
+    //         },
+    //         {
+    //             name: "js",
+    //             icon: "/javascript.svg"
+    //         },
+    //     ],
+    //     description: "Responsive hotel website made using Html, Scss and JavaScript.",
+    //     links: {
+    //         img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-hotel.png",
+    //         code: "https://github.com/init1-dev/hotel-miranda-web",
+    //         demo: "http://hotel-miranda-web.s3-website.eu-west-3.amazonaws.com/"
+    //     }
+    // },
+    // {
+    //     name: "Miranda Web PHP",
+    //     subtitle: "hotel-miranda-PHP",
+    //     design: "Responsive",
+    //     technologies: [
+    //         {
+    //             name: "html",
+    //             icon: "/HTML5.svg"
+    //         },
+    //         {
+    //             name: "scss",
+    //             icon: "/sass.svg"
+    //         },
+    //         {
+    //             name: "js",
+    //             icon: "/javascript.svg"
+    //         },
+    //         {
+    //             name: "php",
+    //             icon: "/php.svg"
+    //         },
+    //     ],
+    //     description: "Responsive hotel website made using Html, Scss, JavaScript and PHP.",
+    //     links: {
+    //         img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-hotel.png",
+    //         code: "https://github.com/init1-dev/hotel-miranda-PHP",
+    //         demo: "https://miranda-php.in1t.dev/"
+    //     }
+    // },
     {
         name: "Miranda Web Laravel",
         subtitle: "miranda-laravel",
@@ -108,31 +133,6 @@ export const projectsList: ProjectInterface[] = [
             demo: "https://miranda-laravel.in1t.dev/"
         }
     },
-    // {
-    //     name: "Miranda Web",
-    //     subtitle: "hotel-miranda-web",
-    //     design: "Responsive",
-    //     technologies: [
-    //         {
-    //             name: "html",
-    //             icon: "/HTML5.svg"
-    //         },
-    //         {
-    //             name: "scss",
-    //             icon: "/sass.svg"
-    //         },
-    //         {
-    //             name: "js",
-    //             icon: "/javascript.svg"
-    //         },
-    //     ],
-    //     description: "Responsive hotel website made using Html, Scss and JavaScript.",
-    //     links: {
-    //         img: "https://in1t-container.s3.eu-west-3.amazonaws.com/portfolio/miranda-hotel.png",
-    //         code: "https://github.com/init1-dev/hotel-miranda-web",
-    //         demo: "http://hotel-miranda-web.s3-website.eu-west-3.amazonaws.com/"
-    //     }
-    // },
     {
         name: "Miranda Dashboard",
         subtitle: "hotel-miranda-dashboard",

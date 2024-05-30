@@ -43,13 +43,11 @@ export const StyledList = styled.ul`
 
 export const StyledItem = styled.li`
     display: flex;
+    align-items: center;
     gap: 0.5rem;
 `;
 
 export const Link = styled.a`
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
     font-size: 15px;
     font-weight: 500;
     margin: auto 0;
@@ -93,10 +91,12 @@ export const InputContainer = styled.div`
 `;
 
 export const Input = styled.input`
+    font-family: Onest, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 15px;
     padding: 0.8rem;
     border-radius: 0.5rem;
     width: 100%;
-    margin: 0;
+    margin: 0.5rem 0 0 0;
     border: unset;
     color: ${({ theme }) => theme.text};
     filter: drop-shadow(1px 1px 1.5px rgb(0 0 0 / 0.6));
@@ -115,10 +115,12 @@ export const TextAreaContainer = styled.div`
 `;
 
 export const TextArea = styled.textarea`
+    font-family: Onest, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 15px;
     padding: 0.8rem;
     border-radius: 0.5rem;
     width: 100%;
-    margin: 0;
+    margin: 0.5rem 0 0 0;
     border: unset;
     filter: drop-shadow(1px 1px 1.5px rgb(0 0 0 / 0.6));
     resize: none;

@@ -24,10 +24,6 @@ interface FormData extends EventTarget {
 
 export const handleSubmit = (e: FormEvent<HTMLFormElement>, setLoading: Dispatch<SetStateAction<boolean>>) => {
     e.preventDefault();
-    return Toast.fire({
-        icon: "warning",
-        text: `This form is currently under development, sorry.`
-    });
     const data = e.target as FormData;
     let name = data.name.value;
     let email = data.email.value;
