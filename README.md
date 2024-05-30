@@ -39,7 +39,6 @@ $npm run dev
 
 ### TODO:
 - Add about img
-- Contact
 
 ## Contact
 
