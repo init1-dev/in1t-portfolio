@@ -54,6 +54,12 @@ export const frontList = [
         color: "",
         docUrl: "https://redux.js.org/"
     },
+    {
+        name: "GIT",
+        icon: "/git.svg",
+        color: "",
+        docUrl: "https://www.git-scm.com/"
+    },
 ];
 
 export const testList = [
@@ -80,7 +86,7 @@ export const backList = [
     },
     {
         name: "MYSQL",
-        icon: "/mysql.png",
+        icon: "/mysql.svg",
         color: "",
         docUrl: "https://dev.mysql.com/doc/"
     },
