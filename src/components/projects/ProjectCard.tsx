@@ -31,7 +31,6 @@ const ProjectCard = ({
                         {
                             technologies.map((el, i) => 
                                 <TechnologyIcon key={i}>
-                                    {/* {el.name} */}
                                     <TechImg src={el.icon} alt={el.name + "-image"} />
                                 </TechnologyIcon>)
                         }
@@ -110,6 +109,9 @@ const CardInfoContainer = styled.div`
         }
 
     p {
+        color: ${({ theme }) => theme.theme === 'light' 
+        ? '#333333'
+        : '#bbbbbb'};
         font-size: 15px;
         text-align: left;
     }

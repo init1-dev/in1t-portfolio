@@ -2,7 +2,6 @@ import styled from "styled-components";
 import LinksComponent from "./LinksComponent";
 import Typed from 'typed.js';
 import { useEffect, useRef } from "react";
-// import { RainbowSpan } from "./RainbowSpan";
 
 const HelloComponent = () => {
     const el = useRef(null);
@@ -28,16 +27,11 @@ const HelloComponent = () => {
                     src="https://in1t-container.s3.eu-west-3.amazonaws.com/foto.jpg"
                     alt="profile image"
                 />
-                {/* <RainbowSpan>
-                    <span>Open to work</span>
-                </RainbowSpan> */}
                 
                 <BorderSpan className="animated-box in">
                     <span>Open to work</span>
                 </BorderSpan>
             </ProfileContainer>
-
-            {/* <AboutTitle>Hey, i'm In1t</AboutTitle> */}
 
             <AnimatedText>
                 <AboutTitle ref={el} />
@@ -58,7 +52,7 @@ const StyledHelloComponent = styled.div`
     flex-direction: column;
     justify-content: center;
     box-shadow: 1px 1px 3px rgb(0 0 0 / 0.6);
-    background-color: ${({ theme }) => theme.stackBg};
+    background: linear-gradient(to bottom, #606c88 0%,#3f4c6b 100%);
 
     @media (min-width: 1000px){
         height: unset;
@@ -82,10 +76,11 @@ const BorderSpan = styled.span`
     margin-left: 1rem;
     font-weight: 600;
     padding: 0.3rem 1.2rem;
-    color: ${({theme}) => theme.text};
-    background-color: ${({theme}) => theme.theme === 'light'
+    color: white;
+    /* background-color: ${({theme}) => theme.theme === 'light'
         ? "rgb(132 255 178 / 40%)" 
-        : "rgb(43 68 102 / 53%)"};
+        : "rgb(43 68 102 / 53%)"}; */
+    background-color: rgb(43 68 102 / 53%);
     filter: drop-shadow(1px 1px 1.5px rgb(0 0 0 / 0.6));
 `;
 
@@ -101,22 +96,25 @@ const AnimatedText = styled.div`
 `;
 
 const AboutTitle = styled.span`
+    color: white;
     font-size: 62px;
     text-align: left;
     margin-top: 2rem;
     margin-right: 0.5rem;
     line-height: 4.5rem;
+    filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
 `;
 
 const AboutSmall = styled.small`
     margin-top: 1.5rem;
     font-size: 18px;
-    filter: invert(25%);
+    color: #89a5c1;
+    filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
 `;
 
 const BasedSmall = styled.small`
     font-size: 14px;
-    color: ${({theme}) => theme.footerText};
+    color: #a9a9a9;
 `;
 
 export default HelloComponent;

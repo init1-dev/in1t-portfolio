@@ -69,8 +69,6 @@ const NavBar = styled.nav`
     gap: 1.5rem;
     background-color: ${({ theme }) => theme.headerBg};
     filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
-    /* box-shadow: var(--shadow-elevation-medium); */
-    
 
     @media (min-width: 1000px) {
         padding: 0.5rem 2rem;
@@ -83,7 +81,6 @@ const NavBar = styled.nav`
         
         &:hover {
             transform: scale(1.1);
-            /* transform-origin: top; */
             filter: drop-shadow(5px 5px 7px rgb(0 0 0 / 0.25));
         }
     }

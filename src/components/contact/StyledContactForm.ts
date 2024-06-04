@@ -19,7 +19,9 @@ export const SectionTitle = styled.h2`
 `;
 
 export const Description = styled.small`
-    
+    color: ${({ theme }) => theme.theme === 'light' 
+        ? '#333333'
+        : '#bbbbbb'};
 `;
 
 export const Icon = styled(RiContactsBook2Line)`
@@ -89,6 +91,12 @@ export const InputsContainer = styled.div`
 
 export const InputContainer = styled.div`
     width: 100%;
+
+    label {
+        color: ${({ theme }) => theme.theme === 'light' 
+        ? '#333333'
+        : '#bbbbbb'};
+    }
 `;
 
 export const Input = styled.input`
@@ -113,6 +121,12 @@ export const Input = styled.input`
 export const TextAreaContainer = styled.div`
     display: flex;
     flex-direction: column;
+
+    label {
+        color: ${({ theme }) => theme.theme === 'light' 
+        ? '#333333'
+        : '#bbbbbb'};
+    }
 `;
 
 export const TextArea = styled.textarea`
@@ -145,18 +159,13 @@ export const SubmitButton = styled.button`
     height: 45px;
     padding: 0.8rem 2rem;
     border-radius: 0.5rem;
-    color: ${({ theme }) => theme.theme === 'light' 
-        ? 'white'
-        : 'white'};
-    background-color: ${({ theme }) => theme.theme === 'light' 
-        ? '#494d8a'
-        : '#333779'};
+    color: white;
+    background-color: #494d8a;
     filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
     border: unset;
     margin: 1rem 0 0 auto;
 
     &:disabled {
-        /* filter: hue-rotate(25deg); */
         cursor: not-allowed;
 
         &:hover {

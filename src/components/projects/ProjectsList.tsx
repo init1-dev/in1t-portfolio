@@ -50,7 +50,6 @@ const ProjectList = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    /* grid-template-columns: ; */
 `;
 
 export default ProjectsList;

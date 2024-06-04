@@ -50,7 +50,6 @@ const AboutSection = styled.section`
 
 const SectionTitle = styled.h2`
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     column-gap: 0.75rem;
     margin-bottom: 2rem;
@@ -63,6 +62,9 @@ const Icon = styled(IoPerson)`
 
 const SectionContent = styled.div`
     text-align: left;
+    color: ${({ theme }) => theme.theme === 'light' 
+        ? '#696969'
+        : '#c5c5c5'};
     
     p:not(:last-child) {
         margin: 1.5rem auto 1.5rem auto;
@@ -77,12 +79,8 @@ export const StyledLink = styled.a`
     gap: 0.5rem;
     padding: 0.3rem 1rem;
     border-radius: 0.5rem;
-    color: ${({ theme }) => theme.theme === 'light' 
-        ? 'white'
-        : 'white'};
-    background-color: ${({ theme }) => theme.theme === 'light' 
-        ? '#494d8a'
-        : '#333779'};
+    color: white;
+    background-color: #494d8a;
     filter: drop-shadow(1px 1px 1.2px rgb(0 0 0 / 0.6));
 
     &:hover {
