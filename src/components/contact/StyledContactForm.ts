@@ -56,6 +56,7 @@ export const Link = styled.a`
     text-rendering: optimizeLegibility;
 
     &:hover {
+        text-decoration: underline;
         cursor: pointer;
         color: ${({ theme }) => theme.menuActive};
     }

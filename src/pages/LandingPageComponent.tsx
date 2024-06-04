@@ -6,7 +6,6 @@ import Contact from "../components/contact/Contact";
 import ProjectsList from "../components/projects/ProjectsList";
 import StackList from "../components/stack/StackList";
 import HelloComponent from "../components/HelloComponent";
-import LinksComponent from "../components/LinksComponent";
 
 const LandingPageComponent = () => {
     
@@ -14,11 +13,9 @@ const LandingPageComponent = () => {
         <>
             <TopBarComponent />
 
+            <HelloComponent />
+            
             <LandingContent>
-                <HelloComponent />
-
-                <LinksComponent />
-
                 <StackList />
 
                 <ProjectsList />

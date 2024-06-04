@@ -67,7 +67,12 @@ const CardContainer = styled.div`
     filter: drop-shadow(1px 1px 2px rgb(0 0 0 / 0.6));
 
     @media (min-width: 1000px){
+        transition: filter 0.3s ease;
         grid-template-columns: 40% 60%;
+
+        &:hover {
+            filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 0.6));
+        }
     }
 `;
 

@@ -38,13 +38,13 @@ const TopBarComponent = () => {
 
 const HeaderContainer = styled.div`
     position: fixed;
-    top: unset;
+    top: 0;
     width: 100%;
     user-select: none;
     z-index: 1;
 
     @media (min-width: 1000px) {
-        top: 1rem;
+        top: 2%;
     }
 `;
 
@@ -75,6 +75,7 @@ const NavBar = styled.nav`
     @media (min-width: 1000px) {
         padding: 0.5rem 2rem;
         width: unset;
+        height: 2.5rem;
         border-radius: 0.5rem;
 
         transition: transform 0.3s ease, filter 0.3s ease;

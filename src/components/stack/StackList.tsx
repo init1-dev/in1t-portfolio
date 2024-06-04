@@ -87,7 +87,8 @@ const StackSection = styled.section`
     padding-top: 5rem;
     
     @media (min-width: 1000px){
-        padding-top: 7rem;
+        margin-top: 1rem;
+        padding-top: 6rem;
     }
 `;
 
