@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { IoPerson } from "react-icons/io5";
 import { GrDocumentPdf } from "react-icons/gr";
+import { Links } from "../LinksComponent";
 
 const AboutMe = () => {
     return (
@@ -23,16 +24,29 @@ const AboutMe = () => {
                     Subsequently I resumed my training in programming. From March 2021 to January 2022 I took several programming courses, a professional certificate in <St>“Object Oriented Programming and Relational Databases”</St> and I am currently developing a project in the tourism sector in <St>OXYGEN</St> working with senior programmers.
                 </p>
 
-                <StyledLink
-                    href="https://drive.google.com/file/d/17L0qu0aSTz3pVPlYQ7_TTb80ljOs75qQ/view?usp=sharing" 
-                    target="_black" 
-                    rel="noopener noreferrer"
-                >
-                    <GrDocumentPdf />
-                    <span>
-                        Download CV
-                    </span>
-                </StyledLink>
+                <Links>
+                    <StyledLink
+                        href="https://drive.google.com/file/d/17L0qu0aSTz3pVPlYQ7_TTb80ljOs75qQ/view?usp=sharing" 
+                        target="_black" 
+                        rel="noopener noreferrer"
+                    >
+                        <GrDocumentPdf />
+                        <span>
+                            My Resume
+                        </span>
+                    </StyledLink>
+
+                    <StyledLink
+                        href="https://mnf.red/in1t/timeline" 
+                        target="_black" 
+                        rel="noopener noreferrer"
+                    >
+                        <IoPerson />
+                        <span>
+                            Manfred Profile
+                        </span>
+                    </StyledLink>
+                </Links>
 
             </SectionContent>
         </AboutSection>

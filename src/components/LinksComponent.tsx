@@ -32,7 +32,7 @@ const LinksComponent = () => {
     )
 }
 
-const Links = styled.nav`
+export const Links = styled.nav`
     display: flex;
     flex-direction: row;
     gap: 1rem;
