@@ -26,7 +26,7 @@ const AboutMe = () => {
 
                 <Links>
                     <StyledLink
-                        href="https://drive.google.com/file/d/17L0qu0aSTz3pVPlYQ7_TTb80ljOs75qQ/view?usp=sharing" 
+                        href="https://drive.google.com/file/d/1uMTFCrjfhlf4y5GmQ0Jx9k4Xehqc8IoK/view?usp=sharing" 
                         target="_black" 
                         rel="noopener noreferrer"
                     >
