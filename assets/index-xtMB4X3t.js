@@ -148,14 +148,13 @@ Error generating stack: `+l.message+`
     cursor: pointer;
     border-radius: 5px;
     transition: transform 0.2s ease;
-    /* box-shadow: rgb(0 0 0 / 40%) 1px 1px 2px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset; */
 
     &:focus, &:focus-visible {
         outline: none;
     }
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 `,Py=N(by)`
     margin: 0;
@@ -207,25 +206,24 @@ Error generating stack: `+l.message+`
     }
 
     a {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         margin: auto 0;
         color: ${({theme:e})=>e.text};
         transition: transform 0.2s ease, color 0.2s ease;
         text-rendering: optimizeLegibility;
 
-        &:hover {
-            color: ${({theme:e})=>e.menuActive};
-            transform: scale(1.12);
-        }
-
         &[aria-selected="true"] {
             color: ${({theme:e})=>e.menuActive};
         }
 
         @media (min-width: 1000px) {
-            font-size: 15px;
             font-weight: 500;
+
+            &:hover {
+                color: ${({theme:e})=>e.menuActive};
+                transform: scale(1.12);
+            }
         }
     }
 `;function Zh(e){return At({tag:"svg",attr:{viewBox:"0 0 512 512"},child:[{tag:"path",attr:{d:"M332.64 64.58C313.18 43.57 286 32 256 32c-30.16 0-57.43 11.5-76.8 32.38-19.58 21.11-29.12 49.8-26.88 80.78C156.76 206.28 203.27 256 256 256s99.16-49.71 103.67-110.82c2.27-30.7-7.33-59.33-27.03-80.6zM432 480H80a31 31 0 0 1-24.2-11.13c-6.5-7.77-9.12-18.38-7.18-29.11C57.06 392.94 83.4 353.61 124.8 326c36.78-24.51 83.37-38 131.2-38s94.42 13.5 131.2 38c41.4 27.6 67.74 66.93 76.18 113.75 1.94 10.73-.68 21.34-7.18 29.11A31 31 0 0 1 432 480z"},child:[]}]})(e)}const Iy=()=>S.jsxs(Xh,{children:[S.jsxs(Or,{href:"https://github.com/init1-dev",target:"_black",rel:"noopener noreferrer",children:[S.jsx(Al,{}),S.jsx("span",{children:"GitHub"})]}),S.jsxs(Or,{href:"https://www.linkedin.com/in/in1t-jorge-guillen/",target:"_black",rel:"noopener noreferrer",children:[S.jsx(qh,{}),S.jsx("span",{children:"LinkedIn"})]})]}),Xh=N.nav`
@@ -233,7 +231,7 @@ Error generating stack: `+l.message+`
     flex-direction: row;
     gap: 1rem;
     margin-top: 2.5rem;
-`,Ay=()=>S.jsxs(Oy,{id:"about",children:[S.jsxs(zy,{children:[S.jsx(Ny,{}),"About me"]}),S.jsxs(By,{children:[S.jsxs("p",{children:["I am a very restless and curious person. I started studying ",S.jsx(Bt,{children:"computer science"})," and later I decided to study a master's degree in ",S.jsx(Bt,{children:"3D and animation"})," at ",S.jsx(Bt,{children:"Trazos school"}),", Madrid."]}),S.jsxs("p",{children:["I have also trained in ",S.jsx(Bt,{children:"photography"}),", I worked as an ",S.jsx(Bt,{children:"architectural photographer"})," from 2015, until 2021, during this period I made several projects, some of which have been published both nationally and internationally on platforms such as ",S.jsx(Bt,{children:"ArchDaily"})," or ",S.jsx(Bt,{children:"Enor Architecture Awards"}),"."]}),S.jsxs("p",{children:["Subsequently I resumed my training in programming. From March 2021 to January 2022 I took several programming courses, a professional certificate in ",S.jsx(Bt,{children:"“Object Oriented Programming and Relational Databases”"})," and I am currently developing a project in the tourism sector in ",S.jsx(Bt,{children:"OXYGEN"})," working with senior programmers."]}),S.jsxs(Xh,{children:[S.jsxs(Or,{href:"https://drive.google.com/file/d/17L0qu0aSTz3pVPlYQ7_TTb80ljOs75qQ/view?usp=sharing",target:"_black",rel:"noopener noreferrer",children:[S.jsx(wy,{}),S.jsx("span",{children:"My Resume"})]}),S.jsxs(Or,{href:"https://mnf.red/in1t/timeline",target:"_black",rel:"noopener noreferrer",children:[S.jsx(Zh,{}),S.jsx("span",{children:"Manfred Profile"})]})]})]})]}),Oy=N.section`
+`,Ay=()=>S.jsxs(Oy,{id:"about",children:[S.jsxs(zy,{children:[S.jsx(Ny,{}),"About me"]}),S.jsxs(By,{children:[S.jsxs("p",{children:["I am a very restless and curious person. I started studying ",S.jsx(Bt,{children:"computer science"})," and later I decided to study a master's degree in ",S.jsx(Bt,{children:"3D and animation"})," at ",S.jsx(Bt,{children:"Trazos school"}),", Madrid."]}),S.jsxs("p",{children:["I have also trained in ",S.jsx(Bt,{children:"photography"}),", I worked as an ",S.jsx(Bt,{children:"architectural photographer"})," from 2015, until 2021, during this period I made several projects, some of which have been published both nationally and internationally on platforms such as ",S.jsx(Bt,{children:"ArchDaily"})," or ",S.jsx(Bt,{children:"Enor Architecture Awards"}),"."]}),S.jsxs("p",{children:["Subsequently I resumed my training in programming. From March 2021 to January 2022 I took several programming courses, a professional certificate in ",S.jsx(Bt,{children:"“Object Oriented Programming and Relational Databases”"})," and I am currently developing a project in the tourism sector in ",S.jsx(Bt,{children:"OXYGEN"})," working with senior programmers."]}),S.jsxs(Xh,{children:[S.jsxs(Or,{href:"https://drive.google.com/file/d/1uMTFCrjfhlf4y5GmQ0Jx9k4Xehqc8IoK/view?usp=sharing",target:"_black",rel:"noopener noreferrer",children:[S.jsx(wy,{}),S.jsx("span",{children:"My Resume"})]}),S.jsxs(Or,{href:"https://mnf.red/in1t/timeline",target:"_black",rel:"noopener noreferrer",children:[S.jsx(Zh,{}),S.jsx("span",{children:"Manfred Profile"})]})]})]})]}),Oy=N.section`
     padding-top: 5rem;
     
     @media (min-width: 1000px){
