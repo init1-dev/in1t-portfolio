@@ -93,17 +93,17 @@ const NavBar = styled.nav`
         transition: transform 0.2s ease, color 0.2s ease;
         text-rendering: optimizeLegibility;
 
-        &:hover {
-            color: ${({ theme }) => theme.menuActive};
-            transform: scale(1.12);
-        }
-
         &[aria-selected="true"] {
             color: ${({ theme }) => theme.menuActive};
         }
 
         @media (min-width: 1000px) {
             font-weight: 500;
+
+            &:hover {
+                color: ${({ theme }) => theme.menuActive};
+                transform: scale(1.12);
+            }
         }
     }
 `;
