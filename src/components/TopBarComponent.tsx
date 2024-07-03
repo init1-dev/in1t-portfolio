@@ -103,7 +103,6 @@ const NavBar = styled.nav`
         }
 
         @media (min-width: 1000px) {
-            font-size: 15px;
             font-weight: 500;
         }
     }
