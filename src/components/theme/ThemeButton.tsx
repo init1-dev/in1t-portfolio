@@ -22,14 +22,13 @@ const ButtonTopbar = styled.button.attrs<{ $theme?: boolean; }>(props => ({
     cursor: pointer;
     border-radius: 5px;
     transition: transform 0.2s ease;
-    /* box-shadow: rgb(0 0 0 / 40%) 1px 1px 2px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset; */
 
     &:focus, &:focus-visible {
         outline: none;
     }
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 `;
 

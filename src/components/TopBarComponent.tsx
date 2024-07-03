@@ -86,7 +86,7 @@ const NavBar = styled.nav`
     }
 
     a {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         margin: auto 0;
         color: ${({ theme }) => theme.text};
