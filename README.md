@@ -36,6 +36,7 @@ $npm run dev
 
 ## Next Updates
 - Language functionality (en/es)
+- Job history
 
 ### TODO:
 - Add about img
